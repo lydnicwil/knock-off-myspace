@@ -61,3 +61,23 @@ body {
     left: 57%;
     margin: 5px black !important;
 }
+ 
+#posts-btn {
+    width: 15px;
+    left: 97%;
+}
+
+#albums-btn {
+    width: 15px;
+    left: 97%;
+}
+
+#photos-displayed {
+    display: grid;
+    -webkit-column-count: 5;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    5;
+  -moz-column-gap:      0px;
+  column-count:         5;
+  column-gap:           0px; 
+}

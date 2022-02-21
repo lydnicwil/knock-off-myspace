@@ -2,6 +2,8 @@
 //$(window).on("load", funcTitle)
 
 var idNum = '';
+var postsHidden = 'false';
+var albumsHidden = false;
 
 $(window).on("load", loadBtns)
 
@@ -65,30 +67,6 @@ fetch('https://jsonplaceholder.typicode.com/users/10')
   .then(function(data){
     document.getElementById('button-10').innerHTML = data.name;
     document.getElementById('button-10').title = data.username + ' ' + data.email;});
-//for(let i=1; i>11; i++){
-  //if(i=1){
-   // btn = document.getElementById("button-1");
-   // document.getElementById(btn).innerHTML = "sheep2";}
- // else if(i=2){
- //   btn = document.getElementById("button-2");}
-  //else if(i=3){
-   // btn = document.getElementById("button-3");}
-  //else if(i=4){
-  //  btn = document.getElementById("button-4");}
- // else if(i=5){
- //   btn = document.getElementById("button-5");}
- // else if(i=6){
- //   btn = document.getElementById("button-6");}
- // else if(i=7){
-  //  btn = document.getElementById("button-7");}
-  //else if(i=8){
-  //  btn = document.getElementById("button-8");}
-  //else if(i=9){
-  //  btn = document.getElementById("button-9");}
- // else if(i=10){
-  //  btn = document.getElementById("button-10");}
- // });
-//}
 }
 
 function displayUserInfo(id) {
@@ -130,6 +108,20 @@ fetch('https://jsonplaceholder.typicode.com/users/' + idNum + '/albums')
 });
 }
 
-function openAlbum() {
+function displayPosts() {
+        if(postsHidden){
+            document.getElementById("#posts-content").style.display = "";
+            postsHidden = 'false';}
+        else{
+            document.getElementById("#posts-content").style.display = "none";
+            postsHidden = 'true';}
+}
 
+function displayAlbums() {
+    if(albumsHidden){
+        document.getElementById("#albums-content").style.display = "";
+        postsHidden = 'false';}
+    else{
+        document.getElementById("#albums-content").style.display = "none";
+        postsHidden = 'true';}
 }
