@@ -2,11 +2,41 @@
 <html lang="en">
 
 <head>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiles</title>
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 </head>
 
 <body>
+    <div class="container border border-dark">
+        <!--Buttons on left side of screen, each for a different user. 
+            To display their name, "Name" changed in javascript.
+            Hovering over displays their username and email.
+            When clicked, it loads that users information in the #profile-display card
+        -->
+        <div class="card col-sm-3 column border-dark rounded" id="user-list">
+        <button id="button-1" onclick="displayUserInfo(this.id)" title="email">Name</button>
+        <button id="button-2" onclick="displayUserInfo(this.id)" title="email">Name</button>
+        <button id="button-3" onclick="displayUserInfo(this.id)" title="email">Name</button>
+        <button id="button-4" onclick="displayUserInfo(this.id)" title="email">Name</button>
+        <button id="button-5" onclick="displayUserInfo(this.id)" title="email">Name</button>
+        <button id="button-6" onclick="displayUserInfo(this.id)" title="email">Name</button>
+        <button id="button-7" onclick="displayUserInfo(this.id)" title="email">Name</button>
+        <button id="button-8" onclick="displayUserInfo(this.id)" title="email">Name</button>
+        <button id="button-9" onclick="displayUserInfo(this.id)" title="email">Name</button>
+        <button id="button-10" onclick="displayUserInfo(this.id)" title="email">Name</button>
+        </div>
     
+        <div class="card col-sm-8 column border-dark rounded" id="profile-display">
+            <p>Please select a user to see account information</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/pages.js"></script>
 </body>
 
 </html>
