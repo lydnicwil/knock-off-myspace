@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(16, 5, 110) !important;
+    display: grid;
+}
+
+.container {
+    position: absolute;
+    top: 15%;
+    width: 90%;
+    left: 10%;
+    background-color: white;
+}
+
+h2 {
+    color: black;
+}
