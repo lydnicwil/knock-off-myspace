@@ -26,13 +26,15 @@ body {
     border: 5px black;
     flex-direction: column;
     background-color: white;
+    display: none;
 }
 
 #user-list {
     border: 5px black;
     flex-direction: column;
     background-color: white;
-    justify-content: center;
+    justify-content: top;
+    padding: 10px;
 }
 
 #profile-display {
@@ -40,4 +42,22 @@ body {
     border: 5px black;
     flex-direction: column;
     background-color: white;
+    padding: 10px;
+}
+
+#person-info {
+    padding: 9px;
+}
+
+#posts {
+    position: absolute;
+    top: 39%;
+    margin: 5px black;
+}
+
+#albums {
+    position: absolute;
+    top: 39%;
+    left: 57%;
+    margin: 5px black !important;
 }

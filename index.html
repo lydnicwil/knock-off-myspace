@@ -31,8 +31,37 @@
         <button class= "button" id="button-10" onclick="displayUserInfo(this.id)" title="email">Name</button>
         </div>
     
-        <div class="card col-sm-8 column border-dark rounded" id="profile-display">
+        <div class="card col-sm-8 column border-dark rounded" id="profile-side">
             <p>Please select a user to see account information</p>
+        </div>
+        <div class="card col-sm-8 column border-dark rounded" id="profile-display">
+            <div class="card col-sm8 column border-dark rounded" id="person-info">
+                <h2 id="current-name">Name</h2>
+                <p>Email:<span class="current" id="current-email"></span></p>
+                <p>Website:<span class="current" id="current-website"></span></p>
+                <p>Phone Number:<span class="current" id="current-phone"></span></p>
+            </div>
+            <div class="card col-sm-6 column border-dark rounded" id="posts">
+                <h3>Posts</h3>
+                <p><span class="current" id="current-post-1"></span></p>
+                <p><span class="current" id="current-post-2"></span></p>
+                <p><span class="current" id="current-post-3"></span></p>
+                <p><span class="current" id="current-post-4"></span></p>
+                <p><span class="current" id="current-post-5"></span></p>
+            </div>
+            <div class="card col-sm-5 column border-dark rounded" id="albums">
+                <h3>Albums</h3>
+                <a>lorem ipsum <span class="current" id="current-album-1" onclick=openAlbum()></span></a>
+                <a>lorem ipsum <span class="current" id="current-album-2" onclick=openAlbum()></span></a>
+                <a>lorem ipsum <span class="current" id="current-album-3" onclick=openAlbum()></span></a>
+                <a>lorem ipsum <span class="current" id="current-album-4" onclick=openAlbum()></span></a>
+                <a>lorem ipsum <span class="current" id="current-album-5" onclick=openAlbum()></span></a>
+                <a>lorem ipsum <span class="current" id="current-album-6" onclick=openAlbum()></span></a>
+                <a>lorem ipsum <span class="current" id="current-album-7" onclick=openAlbum()></span></a>
+                <a>lorem ipsum <span class="current" id="current-album-8" onclick=openAlbum()></span></a>
+                <a>lorem ipsum <span class="current" id="current-album-9" onclick=openAlbum()></span></a>
+                <a>lorem ipsum <span class="current" id="current-album-10" onclick=openAlbum()></span></a>
+            </div>
         </div>
         </div>
     </div>
